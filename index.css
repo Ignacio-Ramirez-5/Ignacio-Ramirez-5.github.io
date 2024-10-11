@@ -93,7 +93,7 @@ h3 {
 }
 
 
-.cursos-container {
+.cursos {
     display: flex;           /* Usa flexbox para alinear los cursos en línea */
     flex-wrap: wrap;        /* Permite que los cursos se ajusten si no hay suficiente espacio */
     justify-content: center; /* Centra los cursos en el contenedor */
@@ -115,20 +115,20 @@ h3 {
     transform: scale(1.05);
 }
 /* Se ajustan las propiedades de los textos */
-.texto-curso {
+.texto_curso {
     padding: 10px; /* Espaciado alrededor del texto */
     font-size: 16px; /* Tamaño del texto */
     color: #ffffff; /* Color del texto */
 }
 
-.linea-separadora {
+.linea_separadora {
     width: 80%; /* Ancho de la línea separadora */
     border: none; /* Elimina el borde por defecto */
     border-top: 1px solid #ffffff; /* Línea horizontal */
     margin: 10px auto; /* Margen automático para centrar */
 }
 
-.imagen-curso {
+.imagen_curso {
     width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
     border-radius: 0 0 10px 10px; /* Bordes redondeados en la parte inferior */

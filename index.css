@@ -6,67 +6,127 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #e1e1e1; /* Color gris claro */
 }
 
 header {
-    background-color: #4E6AFF; 
+    background-color: #000000;
     width: 100%;
-    padding: 20px; 
+    padding: 20px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 
 h1 {
     color: white;
-    font-size: 80px; 
-    font-family: 'Times New Roman', Times, serif; 
-    text-align: center; 
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
 nav {
-    background-color: #FFF4B7; 
-    padding: 10px; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    width: 100%; 
-    margin-top: 20px; 
-    border-radius: 15px; 
+    background-color: #cccccc;
+    padding: 0; /* Eliminar padding */
+    display: flex;
+    align-items: center; /* Centrar elementos verticalmente */
+    justify-content: space-between; /* Espacio entre logo y "Sign Up" */
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 15px;
+    height: 60px; /* Establecer altura para el nav */
 }
 
-.nav-links {
-    display: flex; 
-    justify-content: center; 
-    flex-grow: 1; 
+nav .nav-container {
+    display: flex;
+    flex: 1; /* Hacer que el contenedor ocupe el espacio disponible */
+    justify-content: center; /* Centramos los enlaces del menú */
 }
 
-nav a {
-    margin: 0 15px; 
-    text-decoration: none; 
-    color: #333; 
-    font-weight: bold; 
+nav ul {
+    display: flex;
+    align-items: center; /* Alinear items verticalmente */
+    padding: 0; /* Eliminar padding del ul */
 }
 
-.sign_up {
-    margin-left: auto;
-    background-color: #7FE8FF;
-    padding: 5px;
-    border: solid 1px black;
+nav li {
+    list-style-type: none; /* Eliminar viñetas de la lista */
+    margin: 0 15px; /* Espacio entre los enlaces */
 }
 
 .logo {
-    width: 5%;
-    border-radius: 10px;
+    max-height: 50px; /* Ajustar la altura máxima del logo */
+    margin-left: 20px; /* Espaciado desde el borde izquierdo */
+}
+
+.sign_up {
+    background-color: #dfed66;
+    padding: 10px 20px; /* Ajustar padding para el botón */
+    border: solid 1px black;
+    border-radius: 5px;
+    display: flex; /* Alinear el contenido del botón */
+    align-items: center; /* Centrar contenido verticalmente */
+    height: 100%; /* Tomar toda la altura del nav */
+    margin-right: 20px; /* Separación del borde derecho */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.categorias {
+    display: inline-block;
+}
+
+.categorias-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.categorias-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.categorias-content a:hover {background-color: #f1f1f1;}
+
+.categorias:hover .categorias-content {
+    display: block;
 }
 
 h2 {
     font-size: 35px;
-    color: #FF5733; 
-    font-family:  'Times New Roman', Times, serif; 
+    color: #ff7b00; 
+    font-family: 'Times New Roman', Times, serif; 
     text-align: center; 
     margin-top: 20px; 
-    margin-bottom: 20px; 
+    margin-bottom: 10px; 
     padding: 10px; 
     transition: transform 0.3s ease;
 }
@@ -84,12 +144,13 @@ section {
 hr {
     width: 50%;             
     border-top: 2px solid #000; 
-    margin-top: 20px;
+    margin-top: 10px; /* Reducido */
     margin-bottom: 20px;       
 }
 
 h3 {
     text-align: center;
+    color: #333; /* Color de los títulos de cursos */
 }
 
 .cursos {
@@ -106,9 +167,10 @@ h3 {
     width: 250px;
     background-color: #10162c;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra más suave */
     margin: 10px;
     transition: transform 0.5s;
+    padding-bottom: 15px; /* Añadir espacio interno */
 }
 
 .curso:hover {
@@ -119,10 +181,15 @@ h3 {
     padding: 10px;
     font-size: 16px;
     color: #ffffff;
+    text-align: center; /* Centrar texto */
+}
+
+.info_curso {
+    width: 80%; /* Asegura que tanto la línea como el precio se alineen en el mismo espacio */
 }
 
 .linea_separadora {
-    width: 80%;
+    width: 100%;
     border: none;
     border-top: 1px solid #ffffff;
     margin: 10px auto;
@@ -132,6 +199,12 @@ h3 {
     width: 100%;
     height: auto;
     border-radius: 0 0 10px 10px;
+}
+
+.texto_precio {
+    font-size: 16px;
+    color: #dfed66; /* Color del precio */
+    text-align: center; /* Centrar el precio */
 }
 
 /* FOOTER */

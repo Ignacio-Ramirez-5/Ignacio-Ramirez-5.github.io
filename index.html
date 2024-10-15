@@ -5,73 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skill Market</title>
     <link rel="stylesheet" href="./index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Skill Market</h1>
 
         <nav class="nav">
+
+        <ul>
             <img class="logo" src="./fotos_Skill_Market/logo_skillmarket.png" alt="logo">
 
-            <div class="nav-links">
-                <a href="#">Inicio</a>
-                <a href="#">Cursos</a>
-                <a href="#">Buscar</a>
-            </div>
-
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="#">Buscar</a></li>
+            <li class="categorias">
+              <a href="javascript:void(0)" class="dropbtn">Categorias</a>
+              <div class="categorias-content">
+                <a href="#">Habilidades Digitales</a>
+                <a href="#">Programación</a>
+                <a href="#">Filosofía</a>
+                <a href="#">Fotografía</a>
+              </div>
+            </li>
             <a class="sign_up" href="#">Sign Up</a>
+          </ul>
         </nav>
     </header>
 
     <section>
         <h2>¡¡¡ Aprende Nuevas Habilidades !!!</h2>
         <hr>
-
+    
         <h3>Cursos Destacados</h3>
-
+    
         <div class="cursos"> 
             <article class="curso">
-                <p class="texto_curso">Seguridad en Internet</p>
-                <hr class="linea_separadora">
+                <h3 class="texto_curso">Seguridad en Internet</h3>
                 <a href="#"><img src="./fotos_Skill_Market/seguridad_internet.jpg" alt="Seguridad en Internet" class="imagen_curso"></a>
+                <p class="texto_curso">Aprende las mejores prácticas para mantener tu información segura en línea.</p>
+                <div class="info_curso">
+                    <hr class="linea_separadora">
+                    <p class="texto_precio"><strong>Precio: 11,99 €</strong></p>
+                </div>
             </article>
-
+    
             <article class="curso">
-                <p class="texto_curso">HTML y CSS</p>
-                <hr class="linea_separadora">
+                <h3 class="texto_curso">HTML y CSS</h3>
                 <a href="#"><img src="./fotos_Skill_Market/html_css.jpg" alt="HTML y CSS" class="imagen_curso"></a>
+                <p class="texto_curso">Crea páginas web atractivas desde cero con HTML y CSS.</p>
+                <div class="info_curso">
+                    <hr class="linea_separadora">
+                    <p class="texto_precio"><strong>Precio: 11,99 €</strong></p>
+                </div>
             </article>
-
+    
             <article class="curso">
-                <p class="texto_curso">Ética y Moral</p>
-                <hr class="linea_separadora">
+                <h3 class="texto_curso">Ética y Moral</h3>
                 <a href="#"><img src="./fotos_Skill_Market/etica_moral.jpg" alt="Ética y Moral" class="imagen_curso"></a>
+                <p class="texto_curso">Explora los conceptos de ética y moral en diferentes contextos sociales.</p>
+                <div class="info_curso">
+                    <hr class="linea_separadora">
+                    <p class="texto_precio"><strong>Precio: 11,99 €</strong></p>
+                </div>
             </article>
-
+    
             <article class="curso">
-                <p class="texto_curso">Fotografía para Principiantes</p>
-                <hr class="linea_separadora">
+                <h3 class="texto_curso">Fotografía para Principiantes</h3>
                 <a href="#"><img src="./fotos_Skill_Market/fotografia_principiantes.jpg" alt="Fotografía para Principiantes" class="imagen_curso"></a>
+                <p class="texto_curso">Domina los conceptos básicos de la fotografía y captura momentos únicos.</p>
+                <div class="info_curso">
+                    <hr class="linea_separadora">
+                    <p class="texto_precio"><strong>Precio: 11,99 €</strong></p>
+                </div>
             </article>
         </div>
     </section>
+    
 
     <footer class="footer">
         <div class="contenido_footer">
             <div class="footer_links">
                 <span>© 2024</span>
-                <a href="#">Sobre nosotros</a>
-                <a href="#">Contacto</a>
                 <a href="#">Términos y condiciones</a>
-                <img src="./fotos_Skill_Market/logo_skillmarket.png" alt="Logo" class="logo_footer">
+                <img src="./fotos_Skill_Market/logo_sin_letras.png" alt="Logo" class="logo_footer">
+                <a href="#">Contacto</a>
                 <a href="#">Política de privacidad</a>  
             </div>
 
             <div class="social_icons">
-                <a href="#"><img src="./fotos_Skill_Market/insta.jpeg" alt="Instagram"></a>
-                <a href="#"><img src="./fotos_Skill_Market/facbook.png" alt="Facebook"></a>
-                <a href="#"><img src="./fotos_Skill_Market/twitter.png" alt="Twitter"></a>
+                <a target="_blank" href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F&hl=es-es&aa_click=8891933284028179"><img src="./fotos_Skill_Market/insta.jpeg" alt="Instagram"></a>
+                <a target="_blank" href="https://www.facebook.com/login/?locale=es_ES"><img src="./fotos_Skill_Market/facbook.png" alt="Facebook"></a>
+                <a target="_blank" href="https://x.com/i/flow/login"><img src="./fotos_Skill_Market/twitter.png" alt="Twitter"></a>
             </div>
         </div>
     </footer>

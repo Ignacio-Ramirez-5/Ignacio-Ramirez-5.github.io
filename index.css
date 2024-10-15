@@ -27,26 +27,17 @@ h1 {
 
 nav {
     background-color: #cccccc;
-    padding: 0; /* Eliminar padding */
     display: flex;
     align-items: center; /* Centrar elementos verticalmente */
-    justify-content: space-between; /* Espacio entre logo y "Sign Up" */
     width: 100%;
     margin-top: 20px;
     border-radius: 15px;
-    height: 60px; /* Establecer altura para el nav */
-}
-
-nav .nav-container {
-    display: flex;
-    flex: 1; /* Hacer que el contenedor ocupe el espacio disponible */
-    justify-content: center; /* Centramos los enlaces del menú */
+    height: 60px; 
 }
 
 nav ul {
     display: flex;
     align-items: center; /* Alinear items verticalmente */
-    padding: 0; /* Eliminar padding del ul */
 }
 
 nav li {

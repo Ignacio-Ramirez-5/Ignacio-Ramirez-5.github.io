@@ -1,3 +1,4 @@
+/* General */
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +7,12 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #e1e1e1; /* Color gris claro */
+    background-color: #e1e1e1;
 }
 
+/* Header */
 header {
     background-color: #000000;
-    width: 100%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -25,62 +26,181 @@ h1 {
     text-align: center;
 }
 
+/* NAV */
 nav {
     background-color: #cccccc;
-    padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: center; /* Enlaces centrados */
+    justify-content: space-between;
     width: 100%;
+    padding: 10px 20px;
     margin-top: 20px;
     border-radius: 15px;
-    position: relative; /* Para posicionar logo y botón */
+    height: 60px;
 }
 
-nav a {
+/* Logo a la izquierda */
+nav .logo {
+    max-height: 50px;
+    margin-left: 0;
+}
+
+/* Menu centrado */
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    list-style-type: none;
+}
+
+nav li {
+    list-style-type: none;
     margin: 0 15px;
+}
+
+nav li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Dropdown categorias */
+li.categorias {
+    position: relative;
+}
+
+.categorias-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.categorias-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.categorias:hover .categorias-content {
+    display: block;
+}
+
+.categorias-content a:hover {
+    background-color: #626262;
+    color: #ffffff;
+}
+
+/* Botón "Sign Up" a la derecha */
+nav .sign_up {
+    background-color: #dfed66;
+    padding: 10px 20px;
+    border: solid 1px black;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Enlaces generales */
+nav a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
 }
 
-.sign_up {
-    position: absolute; /* Para que se ubique a la derecha */
-    right: 20px; /* Espaciado desde el borde derecho */
-    background-color: #dfed66;
-    padding: 5px 15px;
-    border: solid 1px black;
-    border-radius: 5px;
-}
-
-.logo {
-    position: absolute; /* Para posicionar a la izquierda */
-    left: 20px; /* Espaciado desde el borde izquierdo */
-    width: 60px; /* Ajusta el tamaño del logo */
-    border-radius: 10px;
-}
-
 h2 {
     font-size: 35px;
-    color: #ff7b00; 
     font-family: 'Times New Roman', Times, serif; 
     text-align: center; 
     margin-top: 20px; 
     margin-bottom: 10px; 
     padding: 10px; 
-    transition: transform 0.3s ease;
 }
 
-h2:hover {
-    transform: skewY(-5deg) scale(1.1); 
+section {
+    display: flex;           
+    flex-direction: column;
+    align-items: center;    
 }
 
-/* CURSOS */
+hr {
+    width: 50%;             
+    border-top: 2px solid #000; 
+    margin-top: 10px;
+    margin-bottom: 20px;       
+}
 
+h3 {
+    text-align: left; /* Cambiar a izquierda para alinear correctamente */
+    color: #333; 
+}
 
+.cursos {
+    display: flex;           
+    flex-direction: column; /* Cambio a columna para que cada curso esté uno debajo del otro */
+    align-items: center; /* Alinear al centro */
+    width: 60%; /* Ajusta el ancho a 70% para que sea más pequeño */
+
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.curso {
+    display: flex;
+    align-items: flex-start; /* Alinear a la parte superior */
+    width: 100%; /* Ocupar todo el ancho del contenedor */
+    background-color: #10162c;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px 0; /* Margen vertical */
+    padding: 15px; /* Añadir espacio interno */
+    transition: transform 0.5s;
+}
+
+.curso:hover {
+    transform: scale(0.95); 
+}
+
+.texto_curso {
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: left; /* Alinear a la izquierda */
+}
+
+.curso_contenido {
+    display: flex;          /* Cambia a flex para que el contenido esté a la derecha */
+    flex-direction: column; /* Asegura que todo el contenido esté en columna */
+    margin-left: 15px;     /* Espacio entre la imagen y el texto */
+    width: calc(100% - 150px); /* Deja espacio para la imagen */
+}
+
+.linea_separadora {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ffffff;
+    margin: 10px 0; /* Separador más centrado */
+}
+
+.imagen_curso {
+    width: 30%; /* Ajusta el ancho de la imagen */
+    height: auto;
+    border-radius: 10px;
+}
+
+.texto_precio {
+    font-size: 16px;
+    color: #dfed66; /* Color del precio */
+    text-align: center; /* Centrar el precio */
+}
 
 /* FOOTER */
-footer {
+.footer {
     background-color: rgb(195, 195, 195);
     padding: 20px 0;
     text-align: center;

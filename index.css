@@ -1,3 +1,4 @@
+/* General */
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +7,12 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #e1e1e1; /* Color gris claro */
+    background-color: #e1e1e1;
 }
 
+/* Header */
 header {
     background-color: #000000;
-    width: 100%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -25,58 +26,39 @@ h1 {
     text-align: center;
 }
 
+/* NAV */
 nav {
     background-color: #cccccc;
     display: flex;
-    align-items: center; /* Centrar elementos verticalmente */
+    align-items: center;
+    justify-content: space-between; /* Para espaciar logo, enlaces y sign up */
     width: 100%;
+    padding: 10px 20px;
     margin-top: 20px;
     border-radius: 15px;
-    height: 60px; 
+    height: 60px;
 }
 
+/* Logo a la izquierda */
+nav .logo {
+    max-height: 50px;
+    margin-left: 0; /* Sin espacio adicional */
+}
+
+/* Menu centrado */
 nav ul {
     display: flex;
-    align-items: center; /* Alinear items verticalmente */
+    justify-content: center; /* Centra los enlaces en el espacio restante */
+    flex-grow: 1; /* Permite que ocupe el espacio central */
+    list-style-type: none;
 }
 
 nav li {
-    list-style-type: none; /* Eliminar viñetas de la lista */
-    margin: 0 15px; /* Espacio entre los enlaces */
-}
-
-.logo {
-    max-height: 50px; /* Ajustar la altura máxima del logo */
-    margin-left: 20px; /* Espaciado desde el borde izquierdo */
-}
-
-.sign_up {
-    background-color: #dfed66;
-    padding: 10px 20px; /* Ajustar padding para el botón */
-    border: solid 1px black;
-    border-radius: 5px;
-    display: flex; /* Alinear el contenido del botón */
-    align-items: center; /* Centrar contenido verticalmente */
-    height: 100%; /* Tomar toda la altura del nav */
-    margin-right: 20px; /* Separación del borde derecho */
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-ul {
     list-style-type: none;
-    overflow: hidden;
+    margin: 0 15px;
 }
 
-li {
-    float: left;
-}
-
-li a, .dropbtn {
+nav li a, .dropbtn {
     display: inline-block;
     color: black;
     text-align: center;
@@ -84,8 +66,9 @@ li a, .dropbtn {
     text-decoration: none;
 }
 
+/* Dropdown categorias */
 li.categorias {
-    display: inline-block;
+    position: relative;
 }
 
 .categorias-content {
@@ -93,7 +76,7 @@ li.categorias {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -102,13 +85,34 @@ li.categorias {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
 }
-
-.categorias-content a:hover {background-color: #f1f1f1;}
 
 .categorias:hover .categorias-content {
     display: block;
+
+}
+
+.categorias-content a:hover {
+    background-color: #626262; /* Color de fondo al pasar el ratón */
+    color: #ffffff; /* Cambia el color del texto también si quieres */
+}
+
+/* Botón "Sign Up" a la derecha */
+nav .sign_up {
+    background-color: #dfed66;
+    padding: 10px 20px;
+    border: solid 1px black;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Enlaces generales */
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
 
 h2 {

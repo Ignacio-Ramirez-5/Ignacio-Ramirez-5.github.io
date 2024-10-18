@@ -6,13 +6,15 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #e1e1e1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Header */
 header {
-    background-color: #000000;
+    background-color: #2c3e50;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -20,233 +22,308 @@ header {
 }
 
 h1 {
-    color: white;
-    font-size: 80px;
+    color: #ecf0f1;
+    font-size: 3rem;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 /* NAV */
 nav {
-    background-color: #cccccc;
+    background-color: #34495e; /* Color de fondo del nav */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Espacio entre logo y botón de Sign Up */
     width: 100%;
     padding: 10px 20px;
     margin-top: 20px;
-    border-radius: 15px;
-    height: 60px;
+    border-radius: 15px; /* Bordes redondeados */
+    height: 60px; /* Altura del nav */
 }
 
-/* Logo a la izquierda */
 nav .logo {
-    max-height: 50px;
-    margin-left: 0;
+    max-height: 50px; /* Altura máxima del logo */
+    margin-right: auto; /* Asegúrate de que el logo esté a la izquierda */
 }
 
-/* Menu centrado */
 nav ul {
     display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    list-style-type: none;
+    justify-content: center; /* Centrar los enlaces en la navegación */
+    list-style-type: none; /* Sin viñetas en la lista */
+    margin: 0; /* Elimina el margen para centrar correctamente */
+    padding: 0; /* Elimina el padding por si acaso */
 }
 
 nav li {
-    list-style-type: none;
-    margin: 0 15px;
+    margin: 0 15px; /* Espaciado entre los enlaces */
 }
 
 nav li a, .dropbtn {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    display: inline-block; /* Para mantener el diseño de los enlaces */
+    color: #ecf0f1; /* Color de texto */
+    text-align: center; /* Alinear texto al centro */
+    padding: 14px 16px; /* Espaciado dentro de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s ease; /* Transición suave para el color */
 }
 
-/* Dropdown categorias */
+nav li a:hover, .dropbtn:hover {
+    color: #3498db; /* Color al pasar el mouse */
+}
+
+/* Dropdown categories */
 li.categorias {
-    position: relative;
+    position: relative; /* Para el dropdown */
 }
 
 .categorias-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    display: none; /* Oculto por defecto */
+    position: absolute; /* Posicionamiento absoluto */
+    background-color: #2c3e50; /* Color de fondo del dropdown */
+    min-width: 160px; /* Ancho mínimo del dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra del dropdown */
+    z-index: 1; /* Z-index para superposición */
+    border-radius: 4px; /* Bordes redondeados */
 }
 
 .categorias-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+    color: #ecf0f1; /* Color de texto en el dropdown */
+    padding: 12px 16px; /* Espaciado dentro del dropdown */
+    text-decoration: none; /* Sin subrayado */
+    display: block; /* Para ocupar todo el ancho */
+    transition: background-color 0.3s ease; /* Transición para el color de fondo */
 }
 
 .categorias:hover .categorias-content {
-    display: block;
+    display: block; /* Mostrar dropdown al pasar el mouse */
 }
 
 .categorias-content a:hover {
-    background-color: #626262;
-    color: #ffffff;
+    background-color: #34495e; /* Color de fondo al pasar el mouse */
 }
 
-/* Botón "Sign Up" a la derecha */
 nav .sign_up {
-    background-color: #dfed66;
-    padding: 10px 20px;
-    border: solid 1px black;
-    border-radius: 5px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: 0;
+    background-color: #2ecc71; /* Color del botón Sign Up */
+    padding: 10px 20px; /* Espaciado dentro del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Alinear texto al centro */
+    color: #fff; /* Color de texto */
+    transition: background-color 0.3s ease; /* Transición suave para el fondo */
+    height: 100%; /* Para ocupar toda la altura del nav */
 }
 
-/* Enlaces generales */
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+nav .sign_up:hover {
+    background-color: #27ae60; /* Color al pasar el mouse sobre el botón */
+}
+
+/* Content Styles */
+section {
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 40px 20px; /* Espaciado en el contenido */
+    display: flex; /* Flex para el contenido */
+    flex-direction: column; /* Dirección de los elementos */
+    align-items: center; /* Alinear al centro */
 }
 
 h2 {
-    font-size: 35px;
-    font-family: 'Times New Roman', Times, serif; 
-    text-align: center; 
-    margin-top: 20px; 
-    margin-bottom: 10px; 
-    padding: 10px; 
-}
-
-section {
-    display: flex;           
-    flex-direction: column;
-    align-items: center;    
+    font-size: 2.5rem; /* Tamaño de fuente para h2 */
+    font-family: 'Times New Roman', Times, serif; /* Tipografía */
+    text-align: center; /* Alinear al centro */
+    margin-top: 20px; /* Margen superior */
+    margin-bottom: 30px; /* Margen inferior */
+    color: #2c3e50; /* Color del texto */
 }
 
 hr {
-    width: 50%;             
-    border-top: 2px solid #000; 
-    margin-top: 10px;
-    margin-bottom: 20px;       
+    width: 50%; /* Ancho de la línea */
+    border: none; /* Sin borde */
+    border-top: 2px solid #3498db; /* Borde superior */
+    margin: 30px auto; /* Margen vertical */
+}
+
+.curso-contenido {
+    background-color: #ffffff; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 30px; /* Espaciado interno */
+    margin: 30px 0; /* Margen vertical */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s ease; /* Transición al mover el ratón */
+    width: 100%; /* Ancho completo */
+}
+
+.curso-contenido:hover {
+    transform: translateY(-5px); /* Efecto al pasar el ratón */
 }
 
 h3 {
-    text-align: left; /* Cambiar a izquierda para alinear correctamente */
-    color: #333; 
+    color: #2c3e50; /* Color del texto */
+    margin-bottom: 20px; /* Margen inferior */
+    font-size: 1.8rem; /* Tamaño de fuente */
+    border-bottom: 2px solid #3498db; /* Línea debajo del texto */
+    padding-bottom: 10px; /* Espaciado interno */
+}
+
+h4 {
+    margin-top: 20px; /* Margen superior */
+    color: #34495e; /* Color del texto */
+    font-size: 1.4rem; /* Tamaño de fuente */
+}
+
+.duracion {
+    font-size: 1.2rem; /* Tamaño de fuente para duración */
+    font-weight: bold; /* Negrita */
+    color: #2ecc71; /* Color */
+}
+
+ul, ol {
+    margin-left: 30px; /* Margen izquierdo */
+    margin-top: 15px; /* Margen superior */
+}
+
+li {
+    margin-bottom: 10px; /* Margen inferior */
 }
 
 .cursos {
-    display: flex;           
-    flex-direction: column; /* Cambio a columna para que cada curso esté uno debajo del otro */
+    display: flex; /* Flex para cursos */
+    flex-direction: column; /* Dirección de los elementos */
     align-items: center; /* Alinear al centro */
-    width: 60%; /* Ajusta el ancho a 70% para que sea más pequeño */
-
-    margin: 0 auto; /* Centra el contenedor */
+    width: 100%; /* Ancho completo */
+    margin: 0 auto; /* Centrado */
 }
 
 .curso {
-    display: flex;
-    align-items: flex-start; /* Alinear a la parte superior */
-    width: 100%; /* Ocupar todo el ancho del contenedor */
-    background-color: #10162c;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex; /* Flex para curso */
+    align-items: flex-start; /* Alinear al inicio */
+    width: 100%; /* Ancho completo */
+    background-color: #10162c; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra */
     margin: 10px 0; /* Margen vertical */
-    padding: 15px; /* Añadir espacio interno */
-    transition: transform 0.5s;
+    padding: 15px; /* Espaciado interno */
+    transition: transform 0.5s; /* Transición al mover el ratón */
+    text-decoration: none; /* Sin subrayado */
 }
 
 .curso:hover {
-    transform: scale(0.95); 
+    transform: scale(0.95); /* Efecto de escalado al pasar el ratón */
+}
+
+.enlace_curso {
+    display: flex; /* Flex para el enlace del curso */
+    align-items: flex-start; /* Alinear al inicio */
+    text-decoration: none; /* Sin subrayado */
+    color: inherit; /* Color heredado */
 }
 
 .texto_curso {
-    padding: 10px;
-    font-size: 16px;
-    color: #ffffff;
+    padding: 10px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    color: #ffffff; /* Color del texto */
     text-align: left; /* Alinear a la izquierda */
 }
 
 .curso_contenido {
-    display: flex;          /* Cambia a flex para que el contenido esté a la derecha */
-    flex-direction: column; /* Asegura que todo el contenido esté en columna */
-    margin-left: 15px;     /* Espacio entre la imagen y el texto */
-    width: calc(100% - 150px); /* Deja espacio para la imagen */
+    display: flex; /* Flex para contenido de curso */
+    flex-direction: column; /* Dirección de los elementos */
+    margin-left: 15px; /* Margen izquierdo */
+    width: calc(100% - 150px); /* Ancho calculado */
 }
 
 .linea_separadora {
-    width: 100%;
-    border: none;
-    border-top: 1px solid #ffffff;
-    margin: 10px 0; /* Separador más centrado */
+    width: 100%; /* Ancho completo */
+    border: none; /* Sin borde */
+    border-top: 1px solid #ffffff; /* Borde superior */
+    margin: 10px 0; /* Margen vertical */
 }
 
 .imagen_curso {
-    width: 30%; /* Ajusta el ancho de la imagen */
-    height: auto;
-    border-radius: 10px;
+    width: 30%; /* Ancho de la imagen */
+    height: auto; /* Alto automático */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
 .texto_precio {
-    font-size: 16px;
-    color: #dfed66; /* Color del precio */
-    text-align: center; /* Centrar el precio */
+    font-size: 16px; /* Tamaño de fuente para precio */
+    color: #2ecc71; /* Color del precio */
+    text-align: center; /* Alinear al centro */
 }
 
-/* FOOTER */
+a {
+    color: #3498db; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+a:hover {
+    color: #2980b9; /* Color al pasar el mouse */
+}
+
+/* Footer */
 .footer {
-    background-color: rgb(195, 195, 195);
-    padding: 20px 0;
-    text-align: center;
-    border-top: 1px solid #000000;
-    margin-top: 40px;
+    background-color: #2c3e50; /* Color de fondo del footer */
+    padding: 40px 0; /* Espaciado interno */
+    color: #ecf0f1; /* Color del texto */
+    margin-top: 60px; /* Margen superior */
 }
 
 .contenido_footer {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 20px;
+    max-width: 1200px; /* Ancho máximo del footer */
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 0 20px; /* Espaciado interno */
 }
 
 .footer_links {
-    margin-bottom: 20px;
+    display: flex; /* Flex para los enlaces del footer */
+    justify-content: center; /* Centrar los enlaces */
+    align-items: center; /* Alinear al centro */
+    flex-wrap: wrap; /* Ajustar los enlaces en varias líneas */
+    margin-bottom: 30px; /* Margen inferior */
 }
 
-.footer_links a {
-    color: black;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 14px;
+.footer_links a, .footer_links span {
+    color: #ecf0f1; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 15px; /* Margen entre los enlaces */
+    font-size: 0.9rem; /* Tamaño de fuente */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+.footer_links a:hover {
+    color: #3498db; /* Color al pasar el mouse */
 }
 
 .logo_footer {
-    max-width: 100px;
-    vertical-align: middle;
+    max-width: 80px; /* Ancho máximo del logo en el footer */
+    margin: 0 20px; /* Margen horizontal */
 }
 
 .social_icons {
-    margin-top: 20px;
-    padding-top: 20px;
-    position: relative;
+    margin-top: 30px; /* Margen superior */
+    padding-top: 30px; /* Espaciado superior */
+    position: relative; /* Posición relativa */
+    text-align: center; /* Alinear al centro */
 }
 
 .social_icons::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70%;
-    border-top: 2px solid #333;
+    content: ''; /* Contenido vacío */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 0; /* Al inicio */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Ajustar centrar */
+    width: 70%; /* Ancho de la línea */
+    border-top: 1px solid #ecf0f1; /* Línea superior */
 }
 
 .social_icons img {
-    width: 30px;
-    margin: 0 5px;
+    width: 30px; /* Ancho de las imágenes */
+    margin: 0 10px; /* Margen horizontal */
+    transition: transform 0.3s ease; /* Transición suave para la transformación */
+}
+
+.social_icons img:hover {
+    transform: scale(1.2); /* Escalado al pasar el mouse */
 }

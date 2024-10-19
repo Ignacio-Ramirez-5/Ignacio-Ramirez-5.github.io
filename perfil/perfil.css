@@ -103,99 +103,6 @@ li.categorias {
     background-color: #34495e; /* Cambiado para mantener el estilo hover del primer CSS */
 }
 
-nav .sign_up {
-    background-color: #2ecc71; /* Cambiado para mantener el color del primer CSS */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px; /* Cambiado para mantener el estilo del primer CSS */
-    text-align: center;
-    margin-left: auto;
-    color: #fff; /* Cambiado para mantener el color del primer CSS */
-    transition: background-color 0.3s ease;
-}
-
-nav .sign_up:hover {
-    background-color: #27ae60; /* Cambiado para mantener el efecto hover del primer CSS */
-}
-
-.fotos{
-    display: block;  /* Cambia la imagen a un elemento de bloque */
-    margin: 0 auto; /* Centra la imagen */
-    width: 40%;
-}
-
-/* Content Styles */
-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-
-h2 {
-    font-size: 2.5rem;
-    font-family: 'Georgia', serif;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    color: #2c3e50;
-}
-
-hr {
-    width: 50%;
-    border: none;
-    border-top: 2px solid #3498db;
-    margin: 30px auto;
-}
-
-.descripcion-curso,
-.duracion-curso,
-.objetivos-curso,
-.contenido-curso,
-.modulo {
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding: 30px;
-    margin: 30px 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.descripcion-curso:hover,
-.duracion-curso:hover,
-.objetivos-curso:hover,
-.contenido-curso:hover,
-.modulo:hover {
-    transform: translateY(-5px);
-}
-
-h3 {
-    color: #2c3e50;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
-}
-
-h4 {
-    margin-top: 20px;
-    color: #34495e;
-    font-size: 1.4rem;
-}
-
-.duracion {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #2ecc71;
-}
-
-ul, ol {
-    margin-left: 30px;
-    margin-top: 15px;
-}
-
-li {
-    margin-bottom: 10px;
-}
 
 a {
     color: #3498db; /* Cambiado para mantener el color del primer CSS */
@@ -207,16 +114,41 @@ a:hover {
     color: #2980b9; /* Cambiado para mantener el efecto hover del primer CSS */
 }
 
-/* Footer */
+.perfil-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.perfil-container h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+.info-usuario, .lista-deseados, .historial-cursos {
+    margin-bottom: 30px;
+}
+.info-usuario p {
+    margin: 5px 0;
+}
+.lista-deseados p, .historial-cursos p {
+    background-color: #ecf0f1;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* FOOTER */
 .footer {
-    background-color: #2c3e50;
-    padding: 40px 0;
-    color: #ecf0f1;
-    margin-top: 60px;
+    background-color: #2c3e50; /* Cambiado para mantener el color del primer CSS */
+    padding: 40px 0; /* Cambiado para mantener el padding del primer CSS */
+    color: #ecf0f1; /* Cambiado para mantener el color del primer CSS */
+    margin-top: 60px; /* Cambiado para mantener el margen del primer CSS */
 }
 
 .contenido_footer {
-    max-width: 1200px;
+    max-width: 1200px; /* Cambiado para mantener el ancho del primer CSS */
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -229,8 +161,9 @@ a:hover {
     margin-bottom: 30px;
 }
 
-.footer_links a, .footer_links span {
-    color: #ecf0f1;
+.footer_links a,
+.footer_links span {
+    color: #ecf0f1; /* Cambiado para mantener el color del primer CSS */
     text-decoration: none;
     margin: 0 15px;
     font-size: 0.9rem;
@@ -238,7 +171,7 @@ a:hover {
 }
 
 .footer_links a:hover {
-    color: #3498db;
+    color: #3498db; /* Cambiado para mantener el efecto hover del primer CSS */
 }
 
 .logo_footer {
@@ -260,7 +193,7 @@ a:hover {
     left: 50%;
     transform: translateX(-50%);
     width: 70%;
-    border-top: 1px solid #ecf0f1;
+    border-top: 1px solid #ecf0f1; /* Cambiado para mantener el estilo del primer CSS */
 }
 
 .social_icons img {
@@ -270,5 +203,5 @@ a:hover {
 }
 
 .social_icons img:hover {
-    transform: scale(1.2);
+    transform: scale(1.2); /* Cambiado para mantener el efecto hover del primer CSS */
 }

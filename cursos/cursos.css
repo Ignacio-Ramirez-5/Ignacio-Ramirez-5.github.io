@@ -6,15 +6,15 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambiado para mantener la tipografía del primer CSS */
-    background-color: #f4f4f4; /* Cambiado para mantener el color de fondo del primer CSS */
-    color: #333; /* Color de texto predeterminado */
-    line-height: 1.6; /* Interlineado */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Header */
 header {
-    background-color: #2c3e50; /* Cambiado para usar el color del primer CSS */
+    background-color: #2c3e50;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -22,11 +22,12 @@ header {
 }
 
 h1 {
-    color: #ecf0f1; /* Cambiado para mantener el color del primer CSS */
-    font-size: 3rem; /* Cambiado para mantener el tamaño de fuente del primer CSS */
-    font-family: 'Georgia', serif; /* Cambiado para mantener la tipografía del primer CSS */
+    color: #ecf0f1;
+    font-size: 3rem;
+    font-family: 'Georgia', serif;
     text-align: center;
 }
+
 
 /* NAV */
 nav {
@@ -120,210 +121,210 @@ nav .sign_up:hover {
 
 /* Content Styles */
 section {
-    max-width: 1200px; /* Ancho máximo del contenido */
-    margin: 0 auto; /* Centrado horizontal */
-    padding: 40px 20px; /* Espaciado en el contenido */
-    display: flex; /* Flex para el contenido */
-    flex-direction: column; /* Dirección de los elementos */
-    align-items: center; /* Alinear al centro */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2 {
-    font-size: 2.5rem; /* Tamaño de fuente para h2 */
-    font-family: 'Times New Roman', Times, serif; /* Tipografía */
-    text-align: center; /* Alinear al centro */
-    margin-top: 20px; /* Margen superior */
-    margin-bottom: 30px; /* Margen inferior */
-    color: #2c3e50; /* Color del texto */
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #2c3e50;
 }
 
 hr {
-    width: 50%; /* Ancho de la línea */
-    border: none; /* Sin borde */
-    border-top: 2px solid #3498db; /* Borde superior */
-    margin: 30px auto; /* Margen vertical */
+    width: 50%;
+    border: none;
+    border-top: 2px solid #3498db;
+    margin: 30px auto;
 }
 
 .curso-contenido {
-    background-color: #ffffff; /* Color de fondo */
-    border-radius: 8px; /* Bordes redondeados */
-    padding: 30px; /* Espaciado interno */
-    margin: 30px 0; /* Margen vertical */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
-    transition: transform 0.3s ease; /* Transición al mover el ratón */
-    width: 100%; /* Ancho completo */
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 30px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 100%;
 }
 
 .curso-contenido:hover {
-    transform: translateY(-5px); /* Efecto al pasar el ratón */
+    transform: translateY(-5px);
 }
 
 h3 {
-    color: #2c3e50; /* Color del texto */
-    margin-bottom: 20px; /* Margen inferior */
-    font-size: 1.8rem; /* Tamaño de fuente */
-    border-bottom: 2px solid #3498db; /* Línea debajo del texto */
-    padding-bottom: 10px; /* Espaciado interno */
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
 }
 
 h4 {
-    margin-top: 20px; /* Margen superior */
-    color: #34495e; /* Color del texto */
-    font-size: 1.4rem; /* Tamaño de fuente */
+    margin-top: 20px;
+    color: #34495e;
+    font-size: 1.4rem;
 }
 
 .duracion {
-    font-size: 1.2rem; /* Tamaño de fuente para duración */
-    font-weight: bold; /* Negrita */
-    color: #2ecc71; /* Color */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2ecc71;
 }
 
 ul, ol {
-    margin-left: 30px; /* Margen izquierdo */
-    margin-top: 15px; /* Margen superior */
+    margin-left: 30px;
+    margin-top: 15px;
 }
 
 li {
-    margin-bottom: 10px; /* Margen inferior */
+    margin-bottom: 10px;
 }
 
 .cursos {
-    display: flex; /* Flex para cursos */
-    flex-direction: column; /* Dirección de los elementos */
-    align-items: center; /* Alinear al centro */
-    width: 100%; /* Ancho completo */
-    margin: 0 auto; /* Centrado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .curso {
-    display: flex; /* Flex para curso */
-    align-items: flex-start; /* Alinear al inicio */
-    width: 100%; /* Ancho completo */
-    background-color: #10162c; /* Color de fondo */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra */
-    margin: 10px 0; /* Margen vertical */
-    padding: 15px; /* Espaciado interno */
-    transition: transform 0.5s; /* Transición al mover el ratón */
-    text-decoration: none; /* Sin subrayado */
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #10162c;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+    padding: 15px;
+    transition: transform 0.5s;
+    text-decoration: none;
 }
 
 .curso:hover {
-    transform: scale(0.95); /* Efecto de escalado al pasar el ratón */
+    transform: scale(0.95);
 }
 
 .enlace_curso {
-    display: flex; /* Flex para el enlace del curso */
-    align-items: flex-start; /* Alinear al inicio */
-    text-decoration: none; /* Sin subrayado */
-    color: inherit; /* Color heredado */
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    color: inherit;
 }
 
 .texto_curso {
-    padding: 10px; /* Espaciado interno */
-    font-size: 16px; /* Tamaño de fuente */
-    color: #ffffff; /* Color del texto */
-    text-align: left; /* Alinear a la izquierda */
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: left;
 }
 
 .curso_contenido {
-    display: flex; /* Flex para contenido de curso */
-    flex-direction: column; /* Dirección de los elementos */
-    margin-left: 15px; /* Margen izquierdo */
-    width: calc(100% - 150px); /* Ancho calculado */
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    width: calc(100% - 150px);
 }
 
 .linea_separadora {
-    width: 100%; /* Ancho completo */
-    border: none; /* Sin borde */
-    border-top: 1px solid #ffffff; /* Borde superior */
-    margin: 10px 0; /* Margen vertical */
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ffffff;
+    margin: 10px 0;
 }
 
 .imagen_curso {
-    width: 30%; /* Ancho de la imagen */
-    height: auto; /* Alto automático */
-    border-radius: 10px; /* Bordes redondeados */
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .texto_precio {
-    font-size: 16px; /* Tamaño de fuente para precio */
-    color: #2ecc71; /* Color del precio */
-    text-align: center; /* Alinear al centro */
+    font-size: 16px;
+    color: #2ecc71;
+    text-align: center;
 }
 
 a {
-    color: #3498db; /* Color de los enlaces */
-    text-decoration: none; /* Sin subrayado */
-    transition: color 0.3s ease; /* Transición suave para el color */
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #2980b9; /* Color al pasar el mouse */
+    color: #2980b9;
 }
 
 /* Footer */
 .footer {
-    background-color: #2c3e50; /* Color de fondo del footer */
-    padding: 40px 0; /* Espaciado interno */
-    color: #ecf0f1; /* Color del texto */
-    margin-top: 60px; /* Margen superior */
+    background-color: #2c3e50;
+    padding: 40px 0;
+    color: #ecf0f1;
+    margin-top: 60px;
 }
 
 .contenido_footer {
-    max-width: 1200px; /* Ancho máximo del footer */
-    margin: 0 auto; /* Centrado horizontal */
-    padding: 0 20px; /* Espaciado interno */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .footer_links {
-    display: flex; /* Flex para los enlaces del footer */
-    justify-content: center; /* Centrar los enlaces */
-    align-items: center; /* Alinear al centro */
-    flex-wrap: wrap; /* Ajustar los enlaces en varias líneas */
-    margin-bottom: 30px; /* Margen inferior */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .footer_links a, .footer_links span {
-    color: #ecf0f1; /* Color del texto */
-    text-decoration: none; /* Sin subrayado */
-    margin: 0 15px; /* Margen entre los enlaces */
-    font-size: 0.9rem; /* Tamaño de fuente */
-    transition: color 0.3s ease; /* Transición suave para el color */
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
 }
 
 .footer_links a:hover {
-    color: #3498db; /* Color al pasar el mouse */
+    color: #3498db;
 }
 
 .logo_footer {
-    max-width: 80px; /* Ancho máximo del logo en el footer */
-    margin: 0 20px; /* Margen horizontal */
+    max-width: 80px;
+    margin: 0 20px;
 }
 
 .social_icons {
-    margin-top: 30px; /* Margen superior */
-    padding-top: 30px; /* Espaciado superior */
-    position: relative; /* Posición relativa */
-    text-align: center; /* Alinear al centro */
+    margin-top: 30px;
+    padding-top: 30px;
+    position: relative;
+    text-align: center;
 }
 
 .social_icons::before {
-    content: ''; /* Contenido vacío */
-    position: absolute; /* Posicionamiento absoluto */
-    top: 0; /* Al inicio */
-    left: 50%; /* Centrar horizontalmente */
-    transform: translateX(-50%); /* Ajustar centrar */
-    width: 70%; /* Ancho de la línea */
-    border-top: 1px solid #ecf0f1; /* Línea superior */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    border-top: 1px solid #ecf0f1;
 }
 
 .social_icons img {
-    width: 30px; /* Ancho de las imágenes */
-    margin: 0 10px; /* Margen horizontal */
-    transition: transform 0.3s ease; /* Transición suave para la transformación */
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
 }
 
 .social_icons img:hover {
-    transform: scale(1.2); /* Escalado al pasar el mouse */
+    transform: scale(1.2);
 }

@@ -57,7 +57,6 @@ nav ul {
 nav li {
     margin: 0 15px;
     color: white;
-
 }
 
 nav li a,
@@ -143,7 +142,7 @@ hr {
     margin: 30px auto;
 }
 
-h3{
+h3 {
     text-align: center;
 }
 
@@ -173,7 +172,6 @@ h3{
     transition: transform 0.3s ease;
     padding-bottom: 15px;
 }
-
 
 .curso:hover {
     transform: scale(1.05); /* Cambiado para mantener el efecto hover del primer CSS */
@@ -284,4 +282,13 @@ a:hover {
 
 .social_icons img:hover {
     transform: scale(1.2); /* Cambiado para mantener el efecto hover del primer CSS */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        align-items: flex-start; /* Alinea los elementos a la izquierda */
+        height: auto;
+    }
 }

@@ -1,0 +1,61 @@
+
+/*------ */
+
+h2{
+    text-align: center;
+}
+.cursos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cursos-hechos, .cursos-pendientes {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: calc(50% - 20px);
+    min-width: 300px;
+}
+
+.cursos-hechos h3, .cursos-pendientes h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.cursos-hechos ul, .cursos-pendientes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cursos-hechos li, .cursos-pendientes li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.check {
+    color: #2ecc71;
+    margin-left: 5px;
+}
+
+.progress-bar {
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    height: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #3498db;
+    height: 100%;
+    transition: width 0.3s ease;
+}
+

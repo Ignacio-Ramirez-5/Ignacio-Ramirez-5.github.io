@@ -1,0 +1,84 @@
+
+
+/* Content Styles */
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+hr {
+    width: 50%;
+    border: none;
+    border-top: 2px solid #3498db;
+    margin: 30px auto;
+}
+
+.descripcion-curso,
+.duracion-curso,
+.objetivos-curso,
+.contenido-curso,
+.modulo {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 30px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.descripcion-curso:hover,
+.duracion-curso:hover,
+.objetivos-curso:hover,
+.contenido-curso:hover,
+.modulo:hover {
+    transform: translateY(-5px);
+}
+
+h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+h4 {
+    margin-top: 20px;
+    color: #34495e;
+    font-size: 1.4rem;
+}
+
+.duracion {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2ecc71;
+}
+
+ul, ol {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #3498db; /* Cambiado para mantener el color del primer CSS */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9; /* Cambiado para mantener el efecto hover del primer CSS */
+}

@@ -145,25 +145,33 @@ h3{
     text-align: center;
 }
 
+.cursos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
 .cursos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 40px;
+    gap: 20px;
 }
 
 .curso {
+    flex: 0 1 calc(25% - 20px);
+    min-width: 250px;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px; /* Mantener el ancho */
-    background-color: #ffffff; /* Cambiado para mantener el color del primer CSS */
-    border-radius: 8px; /* Cambiado para mantener el estilo del primer CSS */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Cambiado para mantener el estilo del primer CSS */
-    margin: 10px;
-    transition: transform 0.3s ease; /* Cambiado para mantener la transición del primer CSS */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
     padding-bottom: 15px;
 }
+
 
 .curso:hover {
     transform: scale(1.05); /* Cambiado para mantener el efecto hover del primer CSS */

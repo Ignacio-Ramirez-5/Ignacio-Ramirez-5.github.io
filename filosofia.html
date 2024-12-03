@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categoria - Filosofía</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./categoria.css">
     <link rel="icon" href="./fotos_Skill_Market/logo.png">
 </head>
@@ -26,6 +27,8 @@
                   </div>
                 </li>
                 <li>|</li>
+                <li><a href="./promociones.html">Promociones</a></li>
+                <li>|</li>
             </ul>
             <a class="sign_up" href="./perfil.html">Perfil</a>
         </nav>
@@ -46,6 +49,9 @@
                         <p class="texto_precio"><strong>Precio: 19,99 €</strong></p>
                     </div>
                 </a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCompraExito">
+                    Comprar Curso
+                </button>
             </article>
 
             <article class="curso">
@@ -58,6 +64,9 @@
                         <p class="texto_precio"><strong>Precio: 14,99 €</strong></p>
                     </div>
                 </a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCompraExito">
+                    Comprar Curso
+                </button>
             </article>
 
             <article class="curso">
@@ -70,9 +79,30 @@
                         <p class="texto_precio"><strong>Precio: 24,99 €</strong></p>
                     </div>
                 </a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCompraExito">
+                    Comprar Curso
+                </button>
             </article>
         </section>
     </main>
+
+    <!-- Modal de compra exitosa -->
+    <div class="modal fade" id="modalCompraExito" tabindex="-1" aria-labelledby="modalCompraExitoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCompraExitoLabel">¡Compra Exitosa!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¡Felicidades! Tu compra para el curso ha sido completada con éxito. ¡Disfruta aprendiendo!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="contenido_footer">
@@ -91,5 +121,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

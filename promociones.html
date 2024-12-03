@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones - Skill Market</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./categoria.css">
+    <link rel="icon" href="./fotos_Skill_Market/logo.png">
+</head>
+<body>
+    <header>
+        <h1>Skill Market</h1>
+        <nav class="nav">
+            <img class="logo" src="./fotos_Skill_Market/logo.png" alt="logo">
+            <ul>
+                <li>|</li>
+                <li><a href="./index.html">Inicio</a></li>
+                <li>|</li>
+                <li class="categorias">
+                  <a href="javascript:void(0)" class="dropbtn">Categorías</a>
+                  <div class="categorias-content">
+                    <a href="./habilidades_digitales.html">Habilidades Digitales</a>
+                    <a href="./programacion.html">Programación</a>
+                    <a href="./filosofia.html">Filosofía</a>
+                    <a href="./fotografia.html">Fotografía</a>
+                  </div>
+                </li>
+                <li>|</li>
+            </ul>
+            <a class="sign_up" href="./perfil.html">Perfil</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>¡Descubre nuestras promociones!</h2>
+        <hr>
+        <section class="cursos"> 
+
+            <!-- Promoción 1 -->
+            <article class="curso">
+                <a href="#" class="enlace_curso">
+                    <img src="./fotos_Skill_Market/fundamentos_programacion.jpg" class="imagen_curso">
+                    <div class="curso_contenido">
+                        <h3 class="texto_curso">Curso de Programación - 50% de descuento</h3>
+                        <hr class="linea_separadora">
+                        <p class="texto_curso">Aprovecha esta oferta limitada para aprender a programar desde cero.</p>
+                    </div>
+                </a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCompraExito">
+                    Comprar Promo
+                </button>
+            </article>
+
+            <!-- Promoción 2 -->
+            <article class="curso">
+                <a href="#" class="enlace_curso">
+                    <img src="./fotos_Skill_Market/composicion_fotografia.jpg" alt="Curso Descuento 2" class="imagen_curso">
+                    <div class="curso_contenido">
+                        <h3 class="texto_curso">Curso de Fotografía - 30% de descuento</h3>
+                        <hr class="linea_separadora">
+                        <p class="texto_curso">Captura momentos especiales con nuestras ofertas en cursos de fotografía.</p>
+                    </div>
+                </a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCompraExito">
+                    Comprar Promo
+                </button>
+            </article>
+
+            <!-- Promoción 3 -->
+            <article class="curso">
+                <a href="#" class="enlace_curso">
+                    <img src="./fotos_Skill_Market/seguridad_internet.jpg" alt="Curso Descuento 3" class="imagen_curso">
+                    <div class="curso_contenido">
+                        <h3 class="texto_curso">Curso de Seguridad en Internet - 40% de descuento</h3>
+                        <hr class="linea_separadora">
+                        <p class="texto_curso">Protege tu información personal con nuestros cursos especializados.</p>
+                    </div>
+                </a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCompraExito">
+                    Comprar Promo
+                </button>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Modal de compra exitosa -->
+    <div class="modal fade" id="modalCompraExito" tabindex="-1" aria-labelledby="modalCompraExitoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCompraExitoLabel">¡Compra Exitosa!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¡Felicidades! Tu compra para la promocion del curso ha sido completada con éxito. ¡Disfruta aprendiendo!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="contenido_footer">
+            <div class="footer_links">
+                <span>© 2024</span>
+                <a href="">Términos y condiciones</a>
+                <a href="#"><img src="./fotos_Skill_Market/logo.png" alt="Logo" class="logo_footer"></a>
+                <a href="">Contacto</a>
+                <a href="">Política de privacidad</a>  
+            </div>
+
+            <div class="social_icons">
+                <a target="_blank" href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F&hl=es-es&aa_click=8891933284028179"><img src="./fotos_Skill_Market/insta.jpeg" alt="Instagram"></a>
+                <a target="_blank" href="https://www.facebook.com/login/?locale=es_ES"><img src="./fotos_Skill_Market/facbook.png" alt="Facebook"></a>
+                <a target="_blank" href="https://x.com/i/flow/login"><img src="./fotos_Skill_Market/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

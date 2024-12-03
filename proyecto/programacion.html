@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promociones - Skill Market</title>
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Categoría - Programación</title>
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./categoria.css">
     <link rel="icon" href="./fotos_Skill_Market/logo.png">
 </head>
@@ -27,58 +27,45 @@
                   </div>
                 </li>
                 <li>|</li>
+                <li><a href="./promociones.html">Promociones</a></li>
+                <li>|</li>
             </ul>
             <a class="sign_up" href="./perfil.html">Perfil</a>
         </nav>
     </header>
 
     <main>
-        <h2>¡Descubre nuestras promociones!</h2>
+        <h2>Categoría - Programación</h2>
         <hr>
-        <section class="cursos"> 
+        <section class="cursos">
 
-            <!-- Promoción 1 -->
             <article class="curso">
-                <a href="#" class="enlace_curso">
-                    <img src="./fotos_Skill_Market/fundamentos_programacion.jpg" class="imagen_curso">
+                <a href="./htmlCssBasico.html" class="enlace_curso">
+                    <img src="./fotos_Skill_Market/html_css.jpg" alt="HTML y CSS Básico" class="imagen_curso">
                     <div class="curso_contenido">
-                        <h3 class="texto_curso">Curso de Programación - 50% de descuento</h3>
+                        <h3 class="texto_curso">HTML y CSS Básico</h3>
                         <hr class="linea_separadora">
-                        <p class="texto_curso">Aprovecha esta oferta limitada para aprender a programar desde cero.</p>
+                        <p class="texto_curso">Aprende los fundamentos del desarrollo web con HTML y CSS, diseñando páginas atractivas y funcionales.</p>
+                        <p class="texto_precio"><strong>Precio: 19,99 €</strong></p>
                     </div>
                 </a>
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCompraExito">
-                    Comprar Promo
+                    Comprar Curso
                 </button>
             </article>
 
-            <!-- Promoción 2 -->
             <article class="curso">
-                <a href="#" class="enlace_curso">
-                    <img src="./fotos_Skill_Market/composicion_fotografia.jpg" alt="Curso Descuento 2" class="imagen_curso">
+                <a href="./javascriptPrincipiantes.html" class="enlace_curso">
+                    <img src="./fotos_Skill_Market/javascript.jpg" alt="Javascript para Principiantes" class="imagen_curso">
                     <div class="curso_contenido">
-                        <h3 class="texto_curso">Curso de Fotografía - 30% de descuento</h3>
+                        <h3 class="texto_curso">Javascript para Principiantes</h3>
                         <hr class="linea_separadora">
-                        <p class="texto_curso">Captura momentos especiales con nuestras ofertas en cursos de fotografía.</p>
+                        <p class="texto_curso">Aprende a programar con JavaScript y crea sitios web interactivos desde cero. ¡Empieza a dar vida a tus ideas hoy!</p>
+                        <p class="texto_precio"><strong>Precio: 24,99 €</strong></p>
                     </div>
                 </a>
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCompraExito">
-                    Comprar Promo
-                </button>
-            </article>
-
-            <!-- Promoción 3 -->
-            <article class="curso">
-                <a href="#" class="enlace_curso">
-                    <img src="./fotos_Skill_Market/seguridad_internet.jpg" alt="Curso Descuento 3" class="imagen_curso">
-                    <div class="curso_contenido">
-                        <h3 class="texto_curso">Curso de Seguridad en Internet - 40% de descuento</h3>
-                        <hr class="linea_separadora">
-                        <p class="texto_curso">Protege tu información personal con nuestros cursos especializados.</p>
-                    </div>
-                </a>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCompraExito">
-                    Comprar Promo
+                    Comprar Curso
                 </button>
             </article>
 
@@ -94,7 +81,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ¡Felicidades! Tu compra para la promocion del curso ha sido completada con éxito. ¡Disfruta aprendiendo!
+                    ¡Felicidades! Tu compra para el curso ha sido completada con éxito. ¡Disfruta aprendiendo!
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -122,6 +109,6 @@
     </footer>
 
     <!-- Scripts de Bootstrap -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

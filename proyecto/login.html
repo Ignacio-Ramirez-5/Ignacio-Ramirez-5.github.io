@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Registro - Skill Market</title>
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./perfil.css">
     <link rel="icon" href="./fotos_Skill_Market/logo.png">
 </head>
 <body>
@@ -33,28 +32,22 @@
         </nav>
     </header>
 
-
-    <main class="perfil-container">
-        <h2>Perfil de Usuario</h2>
-        
-        <section class="info-usuario">
-            <h3>Información Personal</h3>
-            <p><strong>Nombre de usuario:</strong> Nacho Ramirez</p>
-            <p><strong>Correo electrónico:</strong> nacho.ramirez@ejemplo.com</p>
-        </section>
-        
-        <section class="lista-deseados">
-            <h3>Lista de Deseados</h3>
-            <a href="./deseos.html"><p>Haz clic aquí para ver tu lista de cursos deseados</p></a>
-        </section>
-        
-        <section class="historial-cursos">
-            <h3>Historial de Cursos</h3>
-            <a href="./historial.html"><p>Haz clic aquí para ver tu historial de cursos completados</p></a>
-        </section>
+    <main class="container">
+        <h2>Iniciar sesión</h2>
+        <form>
+            <div class="form-group">
+                <label for="correoLogin">Correo electrónico</label>
+                <input type="email" class="form-control" id="correoLogin" placeholder="Correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="contrasenaLogin">Contraseña</label>
+                <input type="password" class="form-control" id="contrasenaLogin" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+        </form>
     </main>
 
-    
+
 
     <footer class="footer">
         <div class="contenido_footer">
@@ -73,5 +66,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="/node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

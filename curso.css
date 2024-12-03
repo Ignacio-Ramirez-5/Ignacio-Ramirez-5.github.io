@@ -82,3 +82,8 @@ a {
 a:hover {
     color: #2980b9; /* Cambiado para mantener el efecto hover del primer CSS */
 }
+.fotos {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}

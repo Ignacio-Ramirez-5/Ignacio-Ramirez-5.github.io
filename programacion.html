@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historial</title>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./historial.css">
+    <title>Categoría - Programación</title>
+    <link rel="stylesheet" href="./categoria.css">
     <link rel="icon" href="./fotos_Skill_Market/logo.png">
 </head>
 <body>
@@ -33,37 +32,32 @@
     </header>
 
     <main>
-        <h2>Mi Progreso</h2>
+        <h2>Categoría - Programación</h2>
         <hr>
+        <section class="cursos">
 
-        <section class="cursos-container">
-            <article class="cursos-hechos">
-                <h3>Cursos Hechos</h3>
-                <ul>
-                    <li>Introducción a la Filosofía <span class="check">✓</span></li>
-                    <li>Historia de la Filosofía <span class="check">✓</span></li>
-                    <li>Composición Fotográfica <span class="check">✓</span></li>
-                    <li>Seguridad en Internet <span class="check">✓</span></li>
-                    <li>Ética y Moral <span class="check">✓</span></li>
-                </ul>
+            <article class="curso">
+                <a href="./htmlCssBasico.html" class="enlace_curso">
+                    <img src="./fotos_Skill_Market/html_css.jpg" alt="HTML y CSS Básico" class="imagen_curso">
+                    <div class="curso_contenido">
+                        <h3 class="texto_curso">HTML y CSS Básico</h3>
+                        <hr class="linea_separadora">
+                        <p class="texto_curso">Aprende los fundamentos del desarrollo web con HTML y CSS, diseñando páginas atractivas y funcionales.</p>
+                        <p class="texto_precio"><strong>Precio: 19,99 €</strong></p>
+                    </div>
+                </a>
             </article>
 
-            <article class="cursos-pendientes">
-                <h3>Cursos Pendientes</h3>
-                <ul>
-                    <li>
-                        Fundamentos de la Programación
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 30%;"></div>
-                        </div>
-                    </li>
-                    <li>
-                        HTML y CSS Básico
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 70%;"></div>
-                        </div>
-                    </li>
-                </ul>
+            <article class="curso">
+                <a href="./javascriptPrincipiantes.html" class="enlace_curso">
+                    <img src="./fotos_Skill_Market/javascript.jpg" alt="Javascript para Principiantes" class="imagen_curso">
+                    <div class="curso_contenido">
+                        <h3 class="texto_curso">Javascript para Principiantes</h3>
+                        <hr class="linea_separadora">
+                        <p class="texto_curso">Aprende a programar con JavaScript y crea sitios web interactivos desde cero. ¡Empieza a dar vida a tus ideas hoy!</p>
+                        <p class="texto_precio"><strong>Precio: 24,99 €</strong></p>
+                    </div>
+                </a>
             </article>
         </section>
     </main>
